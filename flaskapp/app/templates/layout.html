@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Flask App</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+
+</head>
+
+<body>
+
+    <header>
+        {% extends "bootstrap/base.html" %}
+        {%block navbar%}
+        <ul class="nav nav-pills" style="font-size:30px; font-weight:bold">
+            <li role="presentation" class="active"><a href="{{ url_for('home') }}">Home</a></li>
+            <li role="presentation"><a href="{{ url_for('about') }}">About</a></li>
+        </ul>
+        {%endblock%}
+
+    </header>
+
+
+    <div class="container">
+        {% block content %}
+        {% endblock %}
+    </div>
+
+</body>
+
+</html>
