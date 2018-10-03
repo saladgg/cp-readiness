@@ -1,2 +1,2 @@
 Hello,
-My name salad guyo.
+Sit tight and wait for further instructions.
