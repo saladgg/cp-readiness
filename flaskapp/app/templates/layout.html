@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Flask</title>
+    {% extends "bootstrap/base.html" %}
+</head>
+
+<body>
+
+    {% block navbar %}
+    <div class="container">
+        <ul class="nav nav-pills">
+            <li role="presentation" class="active"><a href="/">Home</a></li>
+            <li role="presentation"><a href="/about">About</a></li>
+        </ul>
+    </div>
+    {% endblock %}
+
+</body>
+
+</html>
